@@ -17,7 +17,7 @@ describe("Servers test (with setup and tear-down)", function() {
 
     let testServ = document.querySelectorAll('#serverTable tbody tr td');
 
-    expect(testServ.length).toEqual(2);
+    expect(testServ.length).toEqual(3);
     expect(testServ[0].innerText).toEqual('Alice');
     expect(testServ[1].innerText).toEqual('$0.00');
   })
@@ -28,3 +28,4 @@ describe("Servers test (with setup and tear-down)", function() {
     serverTbody.innerHTML = '';
   });
 });
+

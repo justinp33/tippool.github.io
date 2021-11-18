@@ -54,15 +54,14 @@ describe("Helpers test (with setup and tear-down)", function(){
         expect(newTr.firstChild.innerHTML).toEqual('test');
     });
 
+    it('should append a delete button to tr on appendDeleteBtn()', function() {
+        let newTr = document.createElement('tr');
 
+        appendDeleteBtn(newTr);
 
-
-
-
-
-
-
-
+        expect(newTr.children.length).toEqual(1);
+        expect(newTr.firstChild.innerHTML).toEqual('X');
+    });
 
     afterEach(function() {
         billAmtInput.value = '';

@@ -40,7 +40,7 @@ describe("Payments test (with setup and tear-down)", function(){
 
         let curTdList = document.querySelectorAll('#paymentTable tbody tr td');
 
-        expect(curTdList.length).toEqual(3);
+        expect(curTdList.length).toEqual(4);
         expect(curTdList[0].innerText).toEqual('$100');
         expect(curTdList[1].innerText).toEqual('$20');
         expect(curTdList[2].innerText).toEqual('20%');
@@ -54,7 +54,6 @@ describe("Payments test (with setup and tear-down)", function(){
         expect(summaryTds[1].innerHTML).toEqual('$20');
         expect(summaryTds[2].innerHTML).toEqual('20%');
     });
-
 
     afterEach(function() {
         billAmtInput.value = '';
